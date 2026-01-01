@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative Recipe Platform</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>🍳 Flavour Fiesta </h1>
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-section">
+      <h2>Add / Edit Recipe</h2>
+      <input type="text" id="title" placeholder="Recipe Title">
+      <input type="text" id="image" placeholder="Image URL">
+      <textarea id="ingredients" placeholder="Ingredients (comma separated)"></textarea>
+      <textarea id="steps" placeholder="Steps"></textarea>
+      <button onclick="addRecipe()">Save Recipe</button>
+    </div>
+
+    <!-- Recipes Section -->
+    <div class="recipes-section">
+      <h2>Recipes</h2>
+      <div id="recipes"></div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>

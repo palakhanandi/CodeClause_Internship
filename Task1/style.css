@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #ffe9d6);
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #ff6b35;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+.form-section, .recipes-section {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.form-section input, .form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.form-section button {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-section button:hover {
+  background: #e85d2a;
+}
+.recipe-card {
+  background: #fff8f2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.recipe-content {
+  padding: 15px;
+}
+.recipe-content h3 {
+  margin: 0 0 10px;
+  color: #ff6b35;
+}
+.ingredients {
+  list-style: none;
+  padding: 0;
+}
+.ingredients li::before {
+  content: "🍴 ";
+}
+.edit-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.delete-btn {
+  background: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
